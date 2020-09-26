@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(#FEEED3, #C9DBE3, #6E5944, #252522);
+}
+
+.container{
+    width: 100vw;
+    min-width: 380px;
+    max-width: 900px;
+    min-height: 100vh;
+    height: auto;
+    display: grid;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-image: url(../img/hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+header>img:nth-of-type(1){
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+header>div{
+    width: 70%;
+    height: 47vh;
+    margin: 15vh auto 0;
+    padding: 5%;
+    padding-right: 20%;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    box-shadow: -2px 0 5px rgba(128, 128, 128, 0.836);
+}
+
+header>div>h1{
+    padding-bottom: 3vh;
+    font-size: 2.5em;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+header>div>hr{
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    left: 7vw;
+    border: none;
+    box-shadow: none;
+    background-color: #FFE1B0;
+}
+
+header>div>p{
+    padding-top: 3vh;
+    padding-right: 4em;
+    letter-spacing: 0.4em;
+}
+
+header>img:nth-of-type(2){
+    width: 38%;
+    position: absolute;
+    top: 5vh;
+    right: 8%;
+    z-index: 2;
+}
+
+main{
+    width: 100%;
+    background-image: url(../img/sprits-bg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: -5vh;
+}
+
+main section:nth-child(1){
+    position: relative;
+    top: -12vh;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(../img/history-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+}
+
+main section:nth-child(1) div:first-of-type{
+    margin: 10vh 0 10vh 7vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main section:nth-child(1) div:nth-of-type(2){
+    margin: 20vh 7vw 10vh 3vw;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main section:nth-child(1) div:nth-of-type(2)>hr{
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    right: 10%;
+    border: none;
+    box-shadow: none;
+    background-color: white;
+}
+
+main section:nth-child(1) div:nth-of-type(2)>h2{
+    margin: 2vh 0;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2em;
+}
+
+main section:nth-child(1) div:nth-of-type(2)>p{
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+main section:nth-child(1) #place{
+    width: 100%;
+    margin-bottom: 2vh;
+    align-self: flex-end;
+}
+
+main section:nth-child(1) #drink{
+    width: 70%;
+    align-self: flex-end;
+}
+
+main section:nth-child(1) .switcher{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 5vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main section:nth-child(1) .square{
+    width: 3vh;
+    height: 3vh;
+    margin-bottom: 1vw;
+    border: 2px solid white;
+}
+
+main section:nth-child(1) .square:hover{
+    background-color: white;
+}
+
+
+main section:nth-child(2){
+    width: 100%;
+    min-height: 60vh;
+    height: auto;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+main section:nth-child(2)>div{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: 20px;
+    grid: 10% auto 10% / repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+main section:nth-child(2)>div>h3{
+    grid-row: 1/2;
+    grid-column: 2/5;
+    font-size: 1em;
+    padding: 0.7em 0;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+main section:nth-child(2)>div img{
+    width: 15vw;
+    max-width: 150px;
+}
+
+#lim, #pes, #apl, #smb, #amr{
+    grid-row: 2/3;
+    padding: 3vh 1vw 1vh;
+}
+
+#limn, #pesn, #apln, #smbn, #amrn{
+    grid-row: 3/4;
+    margin: 0 auto;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#lim, #limn{
+    grid-column: 1/2;
+}
+#pes, #pesn{
+    grid-column: 2/3;
+}
+#apl, #apln{
+    grid-column: 3/4;
+}
+#smb, #smbn{
+    grid-column: 4/5;
+}
+#amr, #amrn{
+    grid-column: 5/6;
+}
+
+footer{
+    background-image: url(../img/contact-bg.png);
+    width: 100%;
+    position: relative;
+    min-height: 60vh;
+    padding: 10vh 0 3vh;
+}
+
+footer>*{
+    margin: 0 auto;
+    min-width: 35%;
+    text-align: center;
+    color: white;
+}
+
+footer>h2{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+}
+
+footer>form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+footer>form>input{
+    height: 3em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+::-webkit-input-placeholder{
+    font-family:'Nanum Myeongjo', serif;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+footer>form>button{
+    margin: 5vh auto;
+    padding: 0.5em 0;
+    width: 80%;
+    height: 2.5em;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+footer>form>input:hover,
+footer>form>button:hover{
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.712);
+}
+
+footer>form>input:active{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid white;
+}
+
+footer>form>button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+footer .contacts>p{
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+@media screen and (max-width:730px){
+    header>img:nth-of-type(2){
+        width: 45%;
+        right: 5%;
+    }
+
+    main{
+        /* background-size: cover;
+        background-position: right, bottom; */
+
+        background-size: auto 75vh;
+    }
+
+    main section:nth-child(1) div:nth-of-type(2)>h2{
+        font-size: 4vh;
+    }
+    
+    main section:nth-child(1) div:nth-of-type(2)>p{
+        font-size: 1.5vh;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    header>div>p{
+        font-size: 1.4vh;
+    }
+}
